@@ -22,7 +22,7 @@ object ParallelCrawler extends App {
     seen
   }
   TimeColored {
-    pprint.pprintln(fetchAllLinksParallel("Albert Einstein", 2))
+    pprint.pprintln(fetchAllLinksParallel("Albert Einstein", 4))
   }
   ec.shutdown()
 }

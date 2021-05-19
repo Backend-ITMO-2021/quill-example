@@ -13,6 +13,7 @@ object Transactions extends App {
       ctx.run(
         query[City].filter(_.district == "Test Borough").update(_.district -> "Test County")
       )
+      pprint.pprintln(ctx.run(query[City].filter(_.population == 0)))
       throw new Exception()
     }
     )

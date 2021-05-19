@@ -23,7 +23,7 @@ object AsyncCrawler extends App {
     rec(Set(startTitle), Set(startTitle), 0)
   }
   TimeColored {
-    pprint.pprintln(Await.result(fetchAllLinksAsync("Albert Einstein", 2), Inf))
+    pprint.pprintln(Await.result(fetchAllLinksAsync("Albert Einstein", 4), Inf))
   }
   ec.shutdown()
   asyncHttpClient.close()
